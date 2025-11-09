@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Migración, Frontera y Diversidad Cultural — Sergio David Borrego Peraza</title>
+  <meta name="description" content="Proyecto visual: Migración, frontera y diversidad cultural en Ciudad Juárez. Documental fotográfico e ilustrado." />
+  <style>
+    :root{
+      /* Paleta inspirada en la imagen: tonos crema, cian, azul, amarillo y magenta */
+      --bg:#f4f1e7; /* crema claro */
+      --card:#fffdf8;
+      --accent:#e53e7d; /* magenta */
+      --cyan:#48c1e0;
+      --yellow:#f5d84c;
+      --blue:#3b82f6;
+      --muted:#374151;
+      --radius:14px;
+      --maxw:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#111827;
+      display:flex;
+      justify-content:center;
+      padding:32px 18px;
+    }
+    .stage{width:100%;max-width:var(--maxw);}
+
+    header{display:flex;gap:16px;align-items:center;margin-bottom:20px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:66px;height:66px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--yellow));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:20px}
+    h1{font-size:20px;margin:0;color:#111827}
+    .meta{color:var(--muted);font-size:13px}
+
+    .hero{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 20px rgba(0,0,0,0.08);display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:center}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}}
+
+    .video-wrap{background:#fff;padding:10px;border-radius:12px;display:flex;flex-direction:column;align-items:center;border:2px solid var(--cyan)}
+    .video-caption{margin-top:8px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Estilo del video de YouTube */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* relación 16:9 */
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 12px;
+      border: 2px solid var(--cyan);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    .summary{padding:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--yellow);font-size:13px;color:#111827;margin-bottom:8px;font-weight:600}
+    .lead{font-size:15px;color:#1f2937;line-height:1.45}
+
+    section{margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){.grid{grid-template-columns:1fr}}
+
+    .card{background:#fff;border-left:5px solid var(--accent);padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .label{color:var(--accent);font-size:13px;margin-bottom:6px;font-weight:600;text-transform:uppercase}
+    .ref-list{list-style:none;padding:0;margin:0}
+    .ref-list li{margin-bottom:6px;color:#374151;font-size:14px}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <header>
+      <div class="brand">
+        <div class="logo">SB</div>
+        <div>
+          <h1>Migración, Frontera y Diversidad Cultural</h1>
+          <div class="meta">217848 —  Proyecto de Narrativa Visual</div>
+        </div>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="meta">Actividad E4. </div>
+        <div class="meta">Galería de evaluación 3</div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="video-wrap">
+        <div style="width:100%;font-size:13px;color:var(--muted);margin-bottom:8px">
+        </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kXSiR7YaKCU?si=EAAXmkFSek5z_iJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="video-caption">
+          Reproduce el video para ver el pitch del proyecto.
+        </div>
+      </div>
+
+      <aside class="summary">
+        <div class="pill">Hipótesis visual</div>
+        <p class="lead">La identidad fronteriza se construye a partir del encuentro entre culturas. Retratar las huellas que los migrantes dejan en Ciudad Juárez revela cómo la mezcla de orígenes, lenguas y tradiciones conforma una nueva identidad colectiva.</p>
+
+        <div style="height:8px"></div>
+        <div class="card">
+          <div class="label">Intención visual</div>
+          <div>Visibilizar la riqueza cultural de la frontera mediante retrato fotográfico e ilustración; mostrar transformación urbana y sentido de pertenencia compartida.</div>
+        </div>
+
+        <div style="height:10px"></div>
+        <div class="card">
+          <div class="label">Referencia visual</div>
+          <ul class="ref-list">
+            <li>Peter Bialobrzeski — observación del cambio urbano</li>
+            <li>Alejandro Cartagena — paisaje social y urbano</li>
+            <li>Graciela Iturbide — identidad local y símbolos</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+
+    <footer>
+      <div>© Sergio David Borrego Peraza — Proyecto: Migración, frontera y diversidad cultural en Ciudad Juárez</div>
+    </footer>
+  </div>
+</body>
+</html>
